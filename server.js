@@ -1,8 +1,9 @@
-const express = require('express');
+const express = require('express')
+const multer = require('multer')
+const upload = multer({ dest: 'uploads/' })
+
 const cors = require('cors');
 require('dotenv').config()
-const multer = require('multer');
-const upload = multer({ dest: 'uploads/' })
 
 const app = express();
 
